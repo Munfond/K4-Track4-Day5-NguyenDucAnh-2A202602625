@@ -6,7 +6,7 @@ Bài lab 120 phút: từ số đo nhiễu đến một bộ theo dõi hợp nh�
 
 | File | Ai dùng | Ghi chú |
 |:--|:--|:--|
-| `Lab/kalman_fusion_lab_STUDENT.ipynb` | Học viên | Notebook phát trên lớp |
+| [`Lab/kalman_fusion_lab_2A202602625.ipynb`](Lab/kalman_fusion_lab_2A202602625.ipynb) | Học viên | Bản nộp đã hoàn thiện, có output và báo cáo |
 | `Lab/kalman_fusion_lab_SOLUTIONS.ipynb` | Giảng viên | Lời giải bài 5–8. Không phát trước khi lab kết thúc |
 | `Lab/instructor_answer_key.py` | Giảng viên | Sinh đáp án Phần 9 từ danh sách mã số |
 | `Lab/grade_lab.py` | Giảng viên | Chấm tự động hàng loạt file nộp |
@@ -29,7 +29,13 @@ pip install numpy matplotlib scipy jupyter ipywidgets nbformat nbclient
 
 ## Học viên
 
-1. Mở `Lab/kalman_fusion_lab_STUDENT.ipynb`.
+Bản trong repository này đã hoàn thiện code bài 5.1, 5.2, 6.1, 7.1 và bonus 8.1, cùng chẩn đoán và báo cáo Phần 9 cho `STUDENT_ID = "2A202602625"`. **Báo cáo nằm ngay trong notebook, ô Markdown thứ 103, tiêu đề “✏️ Báo cáo nhiệm vụ Lynx-07”, sau Mission dashboard.** Đã chạy 60/60 ô code bằng kernel sạch trên CPU, không có lỗi, pooled mean NIS sau sửa ≈ 2,42. Ô cuối in `✅ Lab Lynx-07 Complete`.
+
+Để chạy trên Colab: mở [Google Colab](https://colab.research.google.com/), chọn **File → Upload notebook**, tải bản nộp ở trên, dùng Python 3/CPU rồi **Runtime → Run all**. Sau khi chạy xong, tải `.ipynb` qua **File → Download** để giữ output. Chạy trên CPU của máy bằng Jupyter cũng đáp ứng yêu cầu bài lab.
+
+Các bước dưới đây mô tả đề bài gốc; bản hiện tại đã thay các stub bằng code. Nếu đổi mã cá nhân, cần chẩn đoán và viết báo cáo lại. Các tài liệu giảng viên liệt kê ở trên thuộc bộ đề gốc và không được phát kèm repository học viên.
+
+1. Mở [`Lab/kalman_fusion_lab_2A202602625.ipynb`](Lab/kalman_fusion_lab_2A202602625.ipynb).
 2. Chạy các cell từ trên xuống. Sau mỗi bài tập, chạy ô kiểm tra — dòng `✅ Exercise … passed` nghĩa là bài đó đúng.
 3. Phần 1–4 đã điền sẵn: chạy và đọc, không chấm.
 4. Tự viết bài **5.1, 5.2, 6.1, 7.1** (đang là `raise NotImplementedError`).
